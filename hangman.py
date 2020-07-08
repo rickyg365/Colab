@@ -7,7 +7,7 @@ print('Ready to play?')
 # Actually we need to be the one to randomly generate a word
 # - we can use a txt file with a whole list of words and a random number 
 #   generator to randomly select a word
-# 
+#  test
 
 word = input('Please enter a word: ') 
 
