@@ -29,6 +29,8 @@ class guess_check():
     name = ''
     guess = ''
 
+    #state = ['0' * word_length] 
+
     def __init__(self, name):
         self.name = name
     
@@ -40,8 +42,17 @@ class guess_check():
         display_string = '' 
         x = 0
         repeat = ''
+
+        state = {
+            self.name[0]: 0,
+            
+        }
         ## repeat_val = ""
         # rep = False
+
+        # Lets make a dictionary with the keys being the letters and the value being their state
+        #
+        
 
         for letter in self.name:
             rep = False
@@ -49,14 +60,18 @@ class guess_check():
                 if guess == let:
                     rep = True
                   ## repeat_val = let  
+                
+
       
             if guess == letter:
                 display_string = display_string + letter # + '_' * (word_length - x)
+
                 if rep == False:
                     repeat += letter
             # elif rep == True:
 
             else:
+
                 display_string += '_'
         print(display_string)
 
