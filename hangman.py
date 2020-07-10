@@ -39,14 +39,9 @@ class guess_check():
 
     def gcheck(self, guess):
         self.guess = guess
-        display_string = '' 
-        x = 0
+        display_string = ''  
         repeat = ''
 
-        state = {
-            self.name[0]: 0,
-            
-        }
         ## repeat_val = ""
         # rep = False
 
